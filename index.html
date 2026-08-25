@@ -1,40 +1,23 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" data-page="home">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- include:head.html -->
     <title>Sefaköy Kartal Spor | 1970’ten Günümüze</title>
     <meta
       name="description"
       content="Sefaköy Kartal Spor, 1970’te kurulmuş İstanbul Süper Amatör Lig kulübü. Tutku, mücadele ve aidiyet."
     />
-    <meta name="theme-color" content="#0B0B0B" />
-    <meta property="og:type" content="website" />
     <meta property="og:title" content="Sefaköy Kartal Spor | 1970’ten Günümüze" />
     <meta
       property="og:description"
       content="İstanbul Süper Amatör Lig’de mücadele eden Sefaköy Kartal Spor’un resmi kurumsal sitesi."
     />
-    <meta property="og:image" content="/images/logo.jpg" />
-    <meta property="og:locale" content="tr_TR" />
-    <link rel="icon" href="/images/logo.jpg" type="image/jpeg" />
-    <link rel="apple-touch-icon" href="/images/logo.jpg" />
-    <link
-      rel="preload"
-      href="/fonts/ElmsSans-VariableFont_wght.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-    <link rel="stylesheet" href="/src/style.css" />
-    <script>
-      document.documentElement.classList.add("js");
-    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SportsClub",
         "name": "Sefaköy Kartal Spor",
+        "url": "/",
         "foundingDate": "1970",
         "telephone": "+90-532-263-28-24",
         "sport": "Soccer",
@@ -53,70 +36,10 @@
     </script>
   </head>
   <body class="font-sans">
-    <a
-      href="#icerik"
-      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-bronze focus:px-4 focus:py-2 focus:text-ink"
-    >
-      İçeriğe geç
-    </a>
-
-    <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50 border-b border-transparent">
-      <div class="container-page flex h-[4.75rem] items-center justify-between gap-4">
-        <a href="#anasayfa" class="flex min-w-0 max-w-[70%] items-center gap-3 sm:max-w-none" aria-label="Sefaköy Kartal Spor ana sayfa">
-          <img
-            src="/images/logo.jpg"
-            alt="Sefaköy Kartal Spor logosu"
-            class="h-12 w-12 rounded-full object-cover ring-1 ring-white/20"
-            width="96"
-            height="96"
-          />
-          <span class="min-w-0 leading-tight">
-            <span class="block truncate font-display text-sm font-extrabold tracking-wide text-white">Sefaköy Kartal Spor</span>
-            <span class="block text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-bronze-light">Kuruluş 1970</span>
-          </span>
-        </a>
-
-        <nav class="hidden items-center gap-6 lg:flex" aria-label="Ana menü">
-          <a class="nav-link is-active" data-nav-link href="#anasayfa">Ana Sayfa</a>
-          <a class="nav-link" data-nav-link href="#kulup">Kulübümüz</a>
-          <a class="nav-link" data-nav-link href="#tarihce">Tarihçe</a>
-          <a class="nav-link" data-nav-link href="#baskan">Başkanımız</a>
-          <a class="nav-link" data-nav-link href="#takimlar">Takımlarımız</a>
-          <a class="nav-link" data-nav-link href="#galeri">Galeri</a>
-          <a class="nav-link" data-nav-link href="#iletisim">İletişim</a>
-        </nav>
-
-        <button
-          id="menu-toggle"
-          class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/30 text-white lg:hidden"
-          type="button"
-          aria-controls="mobile-panel"
-          aria-expanded="false"
-          aria-label="Menüyü aç"
-        >
-          <span class="flex flex-col gap-1.5">
-            <span class="block h-px w-5 bg-current"></span>
-            <span class="block h-px w-5 bg-current"></span>
-            <span class="block h-px w-3 bg-current"></span>
-          </span>
-        </button>
-      </div>
-
-      <div id="mobile-panel" class="mobile-panel absolute inset-x-0 top-full border-b border-white/10 bg-ink/95 px-5 py-6 backdrop-blur-xl lg:hidden">
-        <nav class="flex flex-col gap-4" aria-label="Mobil menü">
-          <a class="nav-link py-1" data-nav-link href="#anasayfa">Ana Sayfa</a>
-          <a class="nav-link py-1" data-nav-link href="#kulup">Kulübümüz</a>
-          <a class="nav-link py-1" data-nav-link href="#tarihce">Tarihçe</a>
-          <a class="nav-link py-1" data-nav-link href="#baskan">Başkanımız</a>
-          <a class="nav-link py-1" data-nav-link href="#takimlar">Takımlarımız</a>
-          <a class="nav-link py-1" data-nav-link href="#galeri">Galeri</a>
-          <a class="nav-link py-1" data-nav-link href="#iletisim">İletişim</a>
-        </nav>
-      </div>
-    </header>
+    <!-- include:header.html -->
 
     <main id="icerik">
-      <section id="anasayfa" class="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-ink pt-24 text-white">
+      <section class="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-ink pt-24 text-white">
         <div class="hero-atmosphere absolute inset-0" aria-hidden="true"></div>
         <div class="absolute inset-0">
           <img
@@ -130,29 +53,29 @@
         <div class="absolute inset-0 bg-hero-wash"></div>
         <div class="grain"></div>
 
-        <div class="container-page relative z-10 grid items-center gap-10 pb-20 pt-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="container-page relative z-10 grid items-center gap-10 pb-20 pt-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
             <p class="reveal section-kicker text-bronze-light">İstanbul Süper Amatör Lig</p>
-            <h1 class="reveal reveal-delay-1 max-w-3xl font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl">
+            <h1 class="reveal reveal-delay-1 font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-[3.35rem]">
               1970’ten Günümüze Ulaşan Köklü Spor Mirası
             </h1>
-            <p class="reveal reveal-delay-2 mt-6 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
+            <p class="reveal reveal-delay-2 mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
               Sefaköy Kartal Spor: Geçmişten Geleceğe Tutku, Mücadele ve Aidiyet.
             </p>
             <div class="reveal reveal-delay-3 mt-8 flex flex-wrap gap-3">
-              <a class="btn-primary" href="#tarihce">Tarihçemiz</a>
-              <a class="btn-ghost" href="#takimlar">Takımlarımız</a>
+              <a class="btn-primary" href="/tarihce.html">Tarihçemiz</a>
+              <a class="btn-ghost" href="/takimlar.html">Takımlarımız</a>
             </div>
           </div>
 
-          <div class="reveal reveal-delay-2 mx-auto flex max-w-sm flex-col items-center text-center">
-            <div class="roundel-ring relative grid place-items-center rounded-full p-6">
+          <div class="reveal reveal-delay-2 mx-auto flex w-full flex-col items-center text-center">
+            <div class="roundel-ring relative grid place-items-center rounded-full p-3 sm:p-4">
               <img
                 src="/images/logo.jpg"
                 alt="Sefaköy Kartal Spor vektörel logosu"
-                class="h-48 w-48 rounded-full object-cover shadow-glow ring-1 ring-bronze/40 sm:h-56 sm:w-56"
-                width="224"
-                height="224"
+                class="brand-logo brand-logo--hero shadow-glow ring-1 ring-bronze/40"
+                width="352"
+                height="352"
               />
             </div>
             <p class="mt-5 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-bronze-light">Sefaköy · Kartal Spor · 1970</p>
@@ -160,321 +83,78 @@
         </div>
       </section>
 
-      <section id="kulup" class="relative overflow-hidden py-20 sm:py-24">
+      <section class="relative overflow-hidden py-20 sm:py-24">
         <div class="container-page">
-          <div class="scroll-reveal mx-auto max-w-2xl text-center">
+          <div class="scroll-reveal mx-auto max-w-none text-center">
             <p class="section-kicker">Kulübümüz</p>
             <h2 class="section-title">Bağımsız bir kimlik, ortak bir aidiyet</h2>
-            <p class="mt-4 text-ink/70">
+            <p class="mt-4 mx-auto max-w-2xl text-ink/70">
               Sefaköy’ün spor kültürünü taşıyan, kendi geleneğiyle yürüyen bir kulüp. Kartal’ın azmi, topun etrafında birleşen bir mahalle ruhu.
             </p>
           </div>
 
           <div class="mt-12 grid gap-5 md:grid-cols-3">
             <article class="card-surface scroll-reveal p-7">
-              <p class="font-display text-4xl font-extrabold text-bronze-dark">1970</p>
+              <p class="font-display text-3xl font-extrabold text-bronze-dark">1970</p>
               <h3 class="mt-3 font-display text-xl font-bold">Köklü Miras</h3>
               <p class="mt-2 text-sm leading-relaxed text-ink/70">Yarım asrı aşan geçmiş, Sefaköy’de futbol sevgisinin kurumsal karşılığıdır.</p>
             </article>
             <article class="card-surface scroll-reveal p-7">
-              <p class="font-display text-4xl font-extrabold text-bronze-dark">Tutku</p>
+              <p class="font-display text-3xl font-extrabold text-bronze-dark">Tutku</p>
               <h3 class="mt-3 font-display text-xl font-bold">Mücadele</h3>
-              <p class="mt-2 text-sm leading-relaxed text-ink/70">Sahada ve sahada dışında disiplin, karakter ve Kartal Spor ruhu.</p>
+              <p class="mt-2 text-sm leading-relaxed text-ink/70">Sahada ve saha dışında disiplin, karakter ve Kartal Spor ruhu.</p>
             </article>
             <article class="card-surface scroll-reveal p-7">
-              <p class="font-display text-4xl font-extrabold text-bronze-dark">Altyapı</p>
+              <p class="font-display text-3xl font-extrabold text-bronze-dark">Altyapı</p>
               <h3 class="mt-3 font-display text-xl font-bold">Aidiyet</h3>
               <p class="mt-2 text-sm leading-relaxed text-ink/70">Gençleri sporla buluşturmak, kulübün kuruluşundan bu yana değişmeyen misyonudur.</p>
             </article>
           </div>
-        </div>
-      </section>
 
-      <section id="tarihce" class="bg-ink py-20 text-paper sm:py-24">
-        <div class="container-page grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
-          <div class="scroll-reveal">
-            <p class="section-kicker text-bronze-light">Tarihçe</p>
-            <h2 class="section-title text-paper">Sefaköy Kartal Spor’un Tarihçesi</h2>
-            <div class="mt-6 space-y-5 text-[0.98rem] leading-relaxed text-white/75">
-              <p>
-                Kulübümüz 1970 yılında resmi olarak kurulmuştur. Bölgenin sosyal ve sportif hayatında önemli bir yere sahip olan kulübümüz, kuruluşundan bu yana Sefaköy’de futbol sevgisini aşılamayı ve gençleri sporla buluşturmayı misyon edinmiştir.
-              </p>
-              <p>
-                Bölgedeki spor potansiyelini harekete geçirmek ve gençlere güçlü bir kulüp çatısı sunmak amacıyla atılan adımlar, Sefaköy Kartal Spor’un temellerini oluşturmuştur. Kurucularımızın ve ilk sporcularımızın tutkusuyla şekillenen “Kartal Spor” ismi, kulübümüzün azimli ve mücadeleci ruhunu temsil etmektedir.
-              </p>
-              <p>
-                1970'ten günümüze uzanan bu geçmiş, bugün Sefaköy Kartal Spor’un taşıdığı sportif kültürün, disiplinin ve kurumsal kulüp kimliğinin en güçlü temelidir.
-              </p>
-            </div>
-          </div>
-
-          <figure class="scroll-reveal relative mx-auto grid w-full max-w-md gap-4">
-            <div class="overflow-hidden rounded-[2rem] border border-white/10 shadow-glow">
-              <img
-                src="/images/tarihce-visual.jpg"
-                alt="Sefaköy Kartal Spor tesisleri, 1970 kulüp binası"
-                class="aspect-[4/5] h-auto w-full object-cover"
-                width="1200"
-                height="1600"
-              />
-            </div>
-            <div class="overflow-hidden rounded-[1.5rem] border border-white/10">
-              <img
-                src="/images/tarihce-arsiv.jpg"
-                alt="Sefaköy Kartal Spor arşiv takım fotoğrafı"
-                class="aspect-[4/3] h-auto w-full object-cover"
-                width="1030"
-                height="750"
-              />
-              <p class="bg-white/5 px-4 py-2 text-center text-[0.65rem] uppercase tracking-[0.18em] text-white/50">Arşiv · Kuruluş mirası</p>
-            </div>
-          </figure>
-        </div>
-      </section>
-
-      <section id="baskan" class="py-20 sm:py-24">
-        <div class="container-page grid items-center gap-12 lg:grid-cols-[0.82fr_1.18fr]">
-          <figure class="scroll-reveal mx-auto w-full max-w-md">
-            <div class="portrait-frame relative rounded-[2rem] p-4 shadow-frame">
-              <div class="overflow-hidden rounded-[1.5rem] ring-1 ring-bronze/35">
-                <img
-                  src="/images/president.jpg"
-                  alt="Sefaköy Kartal Spor Başkanı Yener Dayı"
-                  class="h-auto w-full object-cover"
-                  width="750"
-                  height="881"
-                />
-              </div>
-              <figcaption class="mt-4 px-2 pb-1 text-center">
-                <p class="font-display text-lg font-bold text-paper">Yener Dayı</p>
-                <p class="text-[0.68rem] uppercase tracking-[0.2em] text-bronze-light">Kulüp Başkanı</p>
-              </figcaption>
-            </div>
-          </figure>
-
-          <div class="scroll-reveal">
-            <p class="section-kicker">Başkanımızın Özgeçmişi</p>
-            <h2 class="section-title">Yener Dayı</h2>
-            <p class="mt-3 font-display text-lg font-semibold text-bronze-dark sm:text-xl">
-              Futbolla Başlayan Bir Hayat, Kulüple Şekillenen Bir Hikâye
-            </p>
-            <div class="mt-6 space-y-5 text-[0.98rem] leading-relaxed text-ink/75">
-              <p>
-                1971 yılında, babasının öğretmenlik görevi nedeniyle Ardahan’dan İstanbul’a taşınan Yener Dayı, ailesiyle birlikte İstanbul’a yerleşti. Çocukluk yıllarından itibaren futbola büyük bir ilgi duyan Başkanımız, futbol oynanan her yerde soluğu alan, futbola tutkuyla bağlı bir çocuk olarak büyüdü. Mahalle aralarında başlayan bu sevgi, zamanla hayatının önemli bir parçası hâline geldi.
-              </p>
-              <p>
-                Bir gün futbol oynayan üç kişilik bir grubun yanına giderek onlarla birlikte oynamaya başladı. Gösterdiği performansla kısa sürede dikkat çekti ve futbol çevresinde tanınmaya başladı. Bu karşılaşma, onun futbol yolculuğunda önemli bir dönüm noktası oldu. Çocukluk yıllarında başlayan futbol tutkusu, ilerleyen yıllarda Sefaköy Kartal Spor Kulübü ile güçlü bir bağa dönüştü.
-              </p>
-              <p>
-                Futbola olan sevgisi ve kulübe bağlılığı, yıllar içerisinde onu yalnızca bir sporcu değil; kulübün gelişimine katkı sunan, sorumluluk alan ve sonunda Sefaköy Kartal Spor Başkanlığı görevini üstlenen bir isim hâline getirdi. Bugün kulübün başında Yener Dayı, yıllar önce mahalle aralarında başlayan futbol sevgisinin ve Sefaköy Kartal Spor’a duyduğu bağlılığın izlerini taşıyan bir anlayışla görev yapmaktadır.
-              </p>
-            </div>
+          <div class="scroll-reveal mt-10 text-center">
+            <a class="btn-dark" href="/kulup.html">Kulübü tanı</a>
           </div>
         </div>
       </section>
 
-      <section id="takimlar" class="bg-ink py-20 text-paper sm:py-24">
+      <section class="bg-ink py-20 text-paper sm:py-24">
         <div class="container-page">
-          <div class="scroll-reveal flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
-            <div>
-              <p class="section-kicker text-bronze-light">Takımlarımız</p>
-              <h2 class="section-title text-paper">Katıldığımız kategoriler</h2>
-              <p class="mt-3 max-w-xl text-white/70">
-                Büyükler ve altyapı liglerinde Kartal Spor çatısı altında mücadele ediyoruz. Görselleri tıklayarak büyütebilirsiniz.
-              </p>
-            </div>
-            <div class="flex rounded-full bg-white/10 p-1" role="tablist" aria-label="Takım seçimi">
-              <button class="tab-btn is-active" type="button" role="tab" aria-selected="true" data-tab="a-takimi">A Takımı</button>
-              <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="minikler">Minikler (Altyapı)</button>
-            </div>
+          <div class="scroll-reveal mx-auto max-w-none text-center">
+            <p class="section-kicker text-bronze-light">Kulüp</p>
+            <h2 class="section-title text-paper">Kartal Spor’u keşfedin</h2>
           </div>
-
-          <ul class="scroll-reveal mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Katıldığı kategoriler">
-            <li class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
-              <p class="font-display text-lg font-extrabold sm:text-xl">Büyükler</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-bronze-light">A Takımı</p>
-            </li>
-            <li class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
-              <p class="font-display text-lg font-extrabold sm:text-xl">U18</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
-            </li>
-            <li class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
-              <p class="font-display text-lg font-extrabold sm:text-xl">U16</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
-            </li>
-            <li class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
-              <p class="font-display text-lg font-extrabold sm:text-xl">U15</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
-            </li>
-            <li class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
-              <p class="font-display text-lg font-extrabold sm:text-xl">U14</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
-            </li>
-            <li class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
-              <p class="font-display text-lg font-extrabold sm:text-xl">U13</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
-            </li>
-            <li class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
-              <p class="font-display text-lg font-extrabold sm:text-xl">U12</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
-            </li>
-            <li class="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
-              <p class="font-display text-lg font-extrabold sm:text-xl">U11</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
-            </li>
-          </ul>
-
-          <div id="galeri" class="mt-10 scroll-reveal">
-            <div data-tab-panel="a-takimi" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              <button type="button" class="gallery-item is-featured" data-lightbox data-src="/images/teams/a-takimi/01.jpg" data-caption="Büyükler · A Takımı">
-                <img src="/images/teams/a-takimi/01.jpg" alt="Sefaköy Kartal Spor A Takımı stadyum karesi" data-fallback width="1600" height="900" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">A Takımı</span></div>
-                <span class="gallery-caption">Büyükler · A Takımı</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/a-takimi/02.jpg" data-caption="A Takımı · Tesis">
-                <img src="/images/teams/a-takimi/02.jpg" alt="Sefaköy Kartal Spor A Takımı tesis önü" data-fallback width="1600" height="900" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">A Takımı</span></div>
-                <span class="gallery-caption">A Takımı · Tesis</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/a-takimi/03.jpg" data-caption="A Takımı">
-                <img src="/images/teams/a-takimi/03.jpg" alt="Sefaköy Kartal Spor A Takımı" data-fallback width="1600" height="900" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">A Takımı</span></div>
-                <span class="gallery-caption">A Takımı</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/a-takimi/04.jpg" data-caption="A Takımı">
-                <img src="/images/teams/a-takimi/04.jpg" alt="Sefaköy Kartal Spor A Takımı saha karesi" data-fallback width="1200" height="1600" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">A Takımı</span></div>
-                <span class="gallery-caption">A Takımı</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/a-takimi/05.jpg" data-caption="A Takımı ve teknik ekip">
-                <img src="/images/teams/a-takimi/05.jpg" alt="Sefaköy Kartal Spor A Takımı ve teknik ekip" data-fallback width="1600" height="1200" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">Teknik ekip</span></div>
-                <span class="gallery-caption">A Takımı ve teknik ekip</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/a-takimi/06.jpg" data-caption="A Takımı">
-                <img src="/images/teams/a-takimi/06.jpg" alt="Sefaköy Kartal Spor A Takımı kadro karesi" data-fallback width="1600" height="740" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">A Takımı</span></div>
-                <span class="gallery-caption">A Takımı</span>
-              </button>
-            </div>
-
-            <div data-tab-panel="minikler" class="hidden grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              <button type="button" class="gallery-item is-featured" data-lightbox data-src="/images/teams/minikler/01.jpg" data-caption="Altyapı Takımı">
-                <img src="/images/teams/minikler/01.jpg" alt="Sefaköy Kartal Spor altyapı (minikler) takımı" data-fallback width="1200" height="1600" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">Altyapı Takımı</span></div>
-                <span class="gallery-caption">Altyapı Takımı</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/minikler/02.jpg" data-caption="Altyapı · U11 / U12">
-                <img src="/images/teams/minikler/02.jpg" alt="Sefaköy Kartal Spor U11 U12 altyapı takımı" data-fallback width="1600" height="1200" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U11 / U12</span></div>
-                <span class="gallery-caption">Altyapı · U11 / U12</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/minikler/03.jpg" data-caption="Altyapı">
-                <img src="/images/teams/minikler/03.jpg" alt="Sefaköy Kartal Spor altyapı takımı" data-fallback width="960" height="874" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">Altyapı</span></div>
-                <span class="gallery-caption">Altyapı</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/minikler/04.jpg" data-caption="Altyapı · Stadyum">
-                <img src="/images/teams/minikler/04.jpg" alt="Sefaköy Kartal Spor altyapı stadyum karesi" data-fallback width="1600" height="1200" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">Altyapı</span></div>
-                <span class="gallery-caption">Altyapı · Stadyum</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/minikler/05.jpg" data-caption="Altyapı">
-                <img src="/images/teams/minikler/05.jpg" alt="Sefaköy Kartal Spor altyapı kadrosu" data-fallback width="1600" height="1200" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">Altyapı</span></div>
-                <span class="gallery-caption">Altyapı</span>
-              </button>
-              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/minikler/06.jpg" data-caption="Altyapı">
-                <img src="/images/teams/minikler/06.jpg" alt="Sefaköy Kartal Spor altyapı maç karesi" data-fallback width="1600" height="1200" />
-                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">Altyapı</span></div>
-                <span class="gallery-caption">Altyapı</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="iletisim" class="py-20 sm:py-24">
-        <div class="container-page grid gap-8 lg:grid-cols-2">
-          <div class="scroll-reveal">
-            <p class="section-kicker">İletişim</p>
-            <h2 class="section-title">Kartal Spor’a ulaşın</h2>
-            <p class="mt-4 max-w-md text-ink/70">
-              Sefaköy Kartal Spor’u ziyaret edin veya sosyal medyadan takip edin.
-            </p>
-          </div>
-          <div class="scroll-reveal grid gap-4 sm:grid-cols-2">
-            <article class="card-surface p-6">
-              <h3 class="text-[0.7rem] font-bold uppercase tracking-[0.18em] text-bronze-dark">Adres</h3>
-              <p class="mt-2 text-sm leading-relaxed text-ink/75">S. Murat Mah. Özmen Sok. No: 2<br />Küçükçekmece / İstanbul</p>
-            </article>
-            <article class="card-surface p-6">
-              <h3 class="text-[0.7rem] font-bold uppercase tracking-[0.18em] text-bronze-dark">Lig</h3>
-              <p class="mt-2 text-sm leading-relaxed text-ink/75">İstanbul Süper Amatör Lig</p>
-            </article>
-            <article class="card-surface p-6 sm:col-span-2">
-              <h3 class="text-[0.7rem] font-bold uppercase tracking-[0.18em] text-bronze-dark">Sosyal medya</h3>
-              <p class="mt-2 flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink/75">
-                <a class="underline-offset-4 transition hover:text-bronze-dark hover:underline" href="https://www.instagram.com/sefakoy.kartalspor1/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a class="underline-offset-4 transition hover:text-bronze-dark hover:underline" href="https://www.facebook.com/profile.php?id=100078918161835" target="_blank" rel="noopener noreferrer">Facebook</a>
-              </p>
-            </article>
-            <article class="card-surface p-6">
-              <h3 class="text-[0.7rem] font-bold uppercase tracking-[0.18em] text-bronze-dark">Telefon</h3>
-              <p class="mt-2 text-sm text-ink/75">
-                <a class="transition hover:text-bronze-dark" href="tel:+905322632824">0532 263 28 24</a>
-              </p>
-            </article>
+          <div class="mt-12 grid gap-5 md:grid-cols-2">
+            <a class="explore-card" href="/tarihce.html">
+              <p class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-bronze-light">Tarihçe</p>
+              <h3 class="mt-3 font-display text-2xl font-bold">1970’ten bugüne</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">Kuruluş hikâyesi, tesis ve arşiv. Sefaköy Kartal Spor’un köklü mirası.</p>
+            </a>
+            <a class="explore-card" href="/baskan.html">
+              <p class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-bronze-light">Başkanımız</p>
+              <h3 class="mt-3 font-display text-2xl font-bold">Yener Dayı</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">Mahalle aralarından kulüp başkanlığına uzanan bir futbol hayatı.</p>
+            </a>
+            <a class="explore-card" href="/takimlar.html">
+              <p class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-bronze-light">Takımlar</p>
+              <h3 class="mt-3 font-display text-2xl font-bold">Büyükler ve altyapı</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">Kategoriler, A Takımı ve minikler galerisi.</p>
+            </a>
+            <a class="explore-card" href="/fikstur.html">
+              <p class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-bronze-light">Fikstür</p>
+              <h3 class="mt-3 font-display text-2xl font-bold">Maçlar ve puan durumu</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">2025-26 sezonu sonuçları. 7. sıra, 41 puan.</p>
+            </a>
+            <a class="explore-card" href="/iletisim.html">
+              <p class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-bronze-light">İletişim</p>
+              <h3 class="mt-3 font-display text-2xl font-bold">Kartal Spor’a ulaşın</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">Adres, telefon ve sosyal medya hesapları.</p>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-white/10 bg-ink text-paper">
-      <div class="container-page grid gap-10 py-14 md:grid-cols-[1.2fr_1fr_1fr]">
-        <div>
-          <a href="#anasayfa" class="flex items-center gap-3">
-            <img src="/images/logo.jpg" alt="Sefaköy Kartal Spor logosu" class="h-14 w-14 rounded-full object-cover ring-1 ring-white/15" width="56" height="56" />
-            <span>
-              <span class="block font-display text-lg font-extrabold">Sefaköy Kartal Spor</span>
-              <span class="block text-[0.65rem] uppercase tracking-[0.22em] text-bronze-light">1970 · İstanbul</span>
-            </span>
-          </a>
-          <p class="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
-            Tutku, mücadele ve aidiyet. Sefaköy’ün köklü spor kulübü.
-          </p>
-        </div>
-        <div>
-          <h2 class="text-[0.7rem] font-bold uppercase tracking-[0.2em] text-bronze-light">İletişim</h2>
-          <p class="mt-3 text-sm leading-relaxed text-white/65">S. Murat Mah. Özmen Sok. No: 2<br />Küçükçekmece / İstanbul<br /><a class="transition hover:text-bronze-light" href="tel:+905322632824">0532 263 28 24</a></p>
-        </div>
-        <div>
-          <h2 class="text-[0.7rem] font-bold uppercase tracking-[0.2em] text-bronze-light">Sosyal</h2>
-          <div class="mt-4 flex gap-3">
-            <a class="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/80 transition hover:border-bronze hover:text-bronze-light" href="https://www.instagram.com/sefakoy.kartalspor1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
-            </a>
-            <a class="grid h-10 w-10 place-items-center rounded-full border border-white/15 text-white/80 transition hover:border-bronze hover:text-bronze-light" href="https://www.facebook.com/profile.php?id=100078918161835" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-white/10 py-5">
-        <p class="container-page text-center text-[0.78rem] text-white/45">© 2026 Sefaköy Kartal Spor. Tüm Hakları Saklıdır.</p>
-      </div>
-    </footer>
-
-    <div id="lightbox" class="lightbox fixed inset-0 z-[70] flex items-center justify-center bg-black/90 p-4" aria-hidden="true" role="dialog" aria-label="Galeri görseli">
-      <button id="lightbox-close" class="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full border border-white/20 text-white" type="button" aria-label="Kapat">✕</button>
-      <button id="lightbox-prev" class="absolute left-4 grid h-11 w-11 place-items-center rounded-full border border-white/20 text-white md:left-8" type="button" aria-label="Önceki">‹</button>
-      <figure class="max-h-[82vh] max-w-5xl">
-        <img id="lightbox-image" alt="" class="max-h-[74vh] w-full rounded-2xl object-contain" />
-        <figcaption id="lightbox-caption" class="mt-3 text-center text-sm uppercase tracking-[0.18em] text-white/70"></figcaption>
-      </figure>
-      <button id="lightbox-next" class="absolute right-4 grid h-11 w-11 place-items-center rounded-full border border-white/20 text-white md:right-8" type="button" aria-label="Sonraki">›</button>
-    </div>
-
+    <!-- include:footer.html -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

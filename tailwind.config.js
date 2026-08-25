@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,css}"],
+  content: ["./*.html", "./src/**/*.html", "./src/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -35,9 +35,6 @@ export default {
       boxShadow: {
         frame: "0 24px 60px rgba(11, 11, 11, 0.22)",
         glow: "0 0 0 1px rgba(184, 149, 106, 0.35), 0 20px 50px rgba(0, 0, 0, 0.28)",
-      },
-      maxWidth: {
-        content: "72rem",
       },
       letterSpacing: {
         brand: "0.18em",

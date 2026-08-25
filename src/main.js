@@ -1,3 +1,24 @@
+const HASH_ROUTES = {
+  "#anasayfa": "/",
+  "#kulup": "/kulup.html",
+  "#tarihce": "/tarihce.html",
+  "#baskan": "/baskan.html",
+  "#takimlar": "/takimlar.html",
+  "#galeri": "/takimlar.html#galeri",
+  "#fikstur": "/fikstur.html",
+  "#iletisim": "/iletisim.html",
+};
+
+function redirectLegacyHash() {
+  const path = window.location.pathname;
+  const isHome = path === "/" || path.endsWith("/index.html");
+  if (!isHome || !window.location.hash) return;
+  const next = HASH_ROUTES[window.location.hash];
+  if (next) window.location.replace(next);
+}
+
+redirectLegacyHash();
+
 const IMAGE_PLAN = {
   hero: "/images/hero-stadium.jpg",
   president: "/images/president.jpg",
@@ -20,6 +41,8 @@ const IMAGE_PLAN = {
   ],
 };
 
+const pageId = document.documentElement.dataset.page || "";
+const solidHeader = document.documentElement.dataset.header === "solid";
 const header = document.querySelector("#site-header");
 const menuToggle = document.querySelector("#menu-toggle");
 const mobilePanel = document.querySelector("#mobile-panel");
@@ -38,22 +61,33 @@ let lightboxIndex = 0;
 
 function setHeaderState() {
   if (!header) return;
-  header.classList.toggle("is-scrolled", window.scrollY > 24);
+  header.classList.toggle("is-scrolled", solidHeader || window.scrollY > 24);
 }
 
-function closeMobileMenu() {
-  if (!menuToggle || !mobilePanel) return;
-  menuToggle.setAttribute("aria-expanded", "false");
-  mobilePanel.classList.remove("is-open");
-  document.body.classList.remove("overflow-hidden");
+function markActiveNav() {
+  navLinks.forEach((link) => {
+    const isActive = link.dataset.nav === pageId;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
 }
 
 function toggleMobileMenu() {
   if (!menuToggle || !mobilePanel) return;
   const open = menuToggle.getAttribute("aria-expanded") !== "true";
   menuToggle.setAttribute("aria-expanded", String(open));
+  menuToggle.setAttribute("aria-label", open ? "Menüyü kapat" : "Menüyü aç");
   mobilePanel.classList.toggle("is-open", open);
   document.body.classList.toggle("overflow-hidden", open);
+}
+
+function closeMobileMenu() {
+  if (!menuToggle || !mobilePanel) return;
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Menüyü aç");
+  mobilePanel.classList.remove("is-open");
+  document.body.classList.remove("overflow-hidden");
 }
 
 function bindNavigation() {
@@ -144,27 +178,6 @@ function bindLightbox() {
   });
 }
 
-function initScrollSpy() {
-  const sections = [...document.querySelectorAll("section[id]")];
-  if (!sections.length) return;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const id = entry.target.id;
-        navLinks.forEach((link) => {
-          const href = link.getAttribute("href") || "";
-          link.classList.toggle("is-active", href === `#${id}`);
-        });
-      });
-    },
-    { rootMargin: "-45% 0px -45% 0px", threshold: 0 },
-  );
-
-  sections.forEach((section) => observer.observe(section));
-}
-
 function initScrollReveal() {
   const nodes = document.querySelectorAll(".scroll-reveal");
   if (!nodes.length) return;
@@ -199,12 +212,12 @@ menuToggle?.addEventListener("click", toggleMobileMenu);
 window.addEventListener("scroll", setHeaderState, { passive: true });
 window.addEventListener("resize", closeMobileMenu);
 
+markActiveNav();
 setHeaderState();
 bindNavigation();
 applyImageFallbacks();
 initTabs();
 bindLightbox();
-initScrollSpy();
 initScrollReveal();
 bindKeyboard();
 refreshGalleryItems();
