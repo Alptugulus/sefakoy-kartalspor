@@ -53,7 +53,7 @@
   }
 
   .section-title {
-    @apply font-display text-2xl font-extrabold leading-tight tracking-tight text-ink sm:text-[1.85rem];
+    @apply font-display text-[1.85rem] font-extrabold leading-tight tracking-tight text-ink sm:text-[2.25rem];
   }
 
   .nav-link {
@@ -103,7 +103,7 @@
   }
 
   .page-title {
-    @apply font-display text-[1.55rem] font-extrabold leading-tight tracking-tight sm:text-[1.85rem] lg:text-[2.1rem];
+    @apply font-display text-[1.95rem] font-extrabold leading-tight tracking-tight sm:text-[2.35rem] lg:text-[2.75rem];
   }
 
   .page-hero-copy {
@@ -623,19 +623,6 @@ body {
   z-index: 2;
 }
 
-.category-chip {
-  transition:
-    border-color 0.25s ease,
-    background 0.25s ease,
-    transform 0.25s ease;
-}
-
-.category-chip:hover {
-  transform: translateY(-2px);
-  border-color: rgba(184, 149, 106, 0.45);
-  background: rgba(255, 255, 255, 0.07);
-}
-
 .standings-table {
   width: 100%;
   min-width: 40rem;
@@ -929,7 +916,7 @@ body {
 .president-title {
   margin: 0 0 0.4rem;
   font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(2.15rem, 5vw, 3.35rem);
+  font-size: clamp(2.6rem, 6vw, 4rem);
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.03em;
@@ -1012,7 +999,7 @@ body {
 .history-year {
   margin: 0.4rem 0 0.2rem;
   font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(3.75rem, 10vw, 6.5rem);
+  font-size: clamp(4.25rem, 11vw, 7.25rem);
   font-weight: 800;
   line-height: 0.85;
   letter-spacing: -0.04em;
@@ -1022,7 +1009,7 @@ body {
 .history-title {
   max-width: 18ch;
   font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(1.7rem, 3.2vw, 2.45rem);
+  font-size: clamp(2.1rem, 4vw, 3rem);
   font-weight: 800;
   line-height: 1.08;
 }
@@ -1093,7 +1080,7 @@ body {
 .history-strip h2 {
   margin-bottom: 0.55rem;
   font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  font-size: 1.65rem;
+  font-size: 2.05rem;
   font-weight: 800;
 }
 
@@ -1127,7 +1114,7 @@ body {
   max-width: 18ch;
   margin-bottom: 1.5rem;
   font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(1.65rem, 2.6vw, 2.15rem);
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
   font-weight: 800;
   line-height: 1.12;
   color: #0b0b0b;
@@ -1147,7 +1134,7 @@ body {
   padding: 0.25rem 0 0.25rem 1.25rem;
   border-left: 3px solid #b8956a;
   font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.9rem;
   font-weight: 800;
   line-height: 1.35;
   color: #0b0b0b;
