@@ -41,6 +41,10 @@
             </div>
             <div class="flex w-full flex-wrap rounded-full bg-white/10 p-1 sm:w-auto" role="tablist" aria-label="Takım seçimi">
               <button class="tab-btn is-active" type="button" role="tab" aria-selected="true" data-tab="a-takimi">A Takımı</button>
+              <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="u18">U18</button>
+              <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="u16">U16</button>
+              <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="u14">U14</button>
+              <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="u12">U12</button>
               <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="minikler">Minikler (Altyapı)</button>
             </div>
           </div>
@@ -48,35 +52,35 @@
           <ul class="scroll-reveal mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Katıldığı kategoriler">
             <li class="category-chip rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
               <p class="font-display text-lg font-extrabold sm:text-xl">Büyükler</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-bronze-light">A Takımı</p>
+              <p class="mt-1 text-[0.62rem] font-normal uppercase tracking-[0.18em] text-bronze-light">A Takımı</p>
             </li>
             <li class="category-chip rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
               <p class="font-display text-lg font-extrabold sm:text-xl">U18</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
+              <p class="mt-1 text-[0.62rem] font-normal uppercase tracking-[0.18em] text-bronze-light">Takım</p>
             </li>
             <li class="category-chip rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
               <p class="font-display text-lg font-extrabold sm:text-xl">U16</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
+              <p class="mt-1 text-[0.62rem] font-normal uppercase tracking-[0.18em] text-bronze-light">Takım</p>
             </li>
             <li class="category-chip rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
               <p class="font-display text-lg font-extrabold sm:text-xl">U15</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
+              <p class="mt-1 text-[0.62rem] font-normal uppercase tracking-[0.18em] text-white/45">Lig</p>
             </li>
             <li class="category-chip rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
               <p class="font-display text-lg font-extrabold sm:text-xl">U14</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
+              <p class="mt-1 text-[0.62rem] font-normal uppercase tracking-[0.18em] text-bronze-light">Takım</p>
             </li>
             <li class="category-chip rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
               <p class="font-display text-lg font-extrabold sm:text-xl">U13</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
+              <p class="mt-1 text-[0.62rem] font-normal uppercase tracking-[0.18em] text-white/45">Lig</p>
             </li>
             <li class="category-chip rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
               <p class="font-display text-lg font-extrabold sm:text-xl">U12</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
+              <p class="mt-1 text-[0.62rem] font-normal uppercase tracking-[0.18em] text-bronze-light">Takım</p>
             </li>
             <li class="category-chip rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-5 text-center">
               <p class="font-display text-lg font-extrabold sm:text-xl">U11</p>
-              <p class="mt-1 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-white/45">Lig</p>
+              <p class="mt-1 text-[0.62rem] font-normal uppercase tracking-[0.18em] text-white/45">Lig</p>
             </li>
           </ul>
 
@@ -111,6 +115,113 @@
                 <img src="/images/teams/a-takimi/06.jpg" alt="Sefaköy Kartal Spor A Takımı kadro karesi" data-fallback width="1600" height="740" />
                 <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">A Takımı</span></div>
                 <span class="gallery-caption">A Takımı</span>
+              </button>
+            </div>
+
+            <div data-tab-panel="u18" class="hidden grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <button type="button" class="gallery-item is-featured" data-lightbox data-src="/images/teams/u18/01.jpg" data-caption="U18 · Atatürk Stadyumu">
+                <img src="/images/teams/u18/01.jpg" alt="Sefaköy Kartal Spor U18 takımı Atatürk Stadyumu karesi" data-fallback width="1336" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U18</span></div>
+                <span class="gallery-caption">U18 · Atatürk Stadyumu</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u18/02.jpg" data-caption="U18 · Saha">
+                <img src="/images/teams/u18/02.jpg" alt="Sefaköy Kartal Spor U18 takımı saha karesi" data-fallback width="1091" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U18</span></div>
+                <span class="gallery-caption">U18 · Saha</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u18/03.jpg" data-caption="U18 · Şenlikköy Stadyumu">
+                <img src="/images/teams/u18/03.jpg" alt="Sefaköy Kartal Spor U18 takımı Şenlikköy Stadyumu karesi" data-fallback width="1478" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U18</span></div>
+                <span class="gallery-caption">U18 · Şenlikköy Stadyumu</span>
+              </button>
+            </div>
+
+            <div data-tab-panel="u16" class="hidden grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <button type="button" class="gallery-item is-featured" data-lightbox data-src="/images/teams/u16/05.jpg" data-caption="U16 · Stadyum">
+                <img src="/images/teams/u16/05.jpg" alt="Sefaköy Kartal Spor U16 takımı stadyum karesi" data-fallback width="1600" height="1200" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U16</span></div>
+                <span class="gallery-caption">U16 · Stadyum</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u16/01.jpg" data-caption="U16 · Saha">
+                <img src="/images/teams/u16/01.jpg" alt="Sefaköy Kartal Spor U16 takımı saha karesi" data-fallback width="738" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U16</span></div>
+                <span class="gallery-caption">U16 · Saha</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u16/02.jpg" data-caption="U16">
+                <img src="/images/teams/u16/02.jpg" alt="Sefaköy Kartal Spor U16 takımı" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U16</span></div>
+                <span class="gallery-caption">U16</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u16/03.jpg" data-caption="U16">
+                <img src="/images/teams/u16/03.jpg" alt="Sefaköy Kartal Spor U16 takımı grup karesi" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U16</span></div>
+                <span class="gallery-caption">U16</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u16/04.jpg" data-caption="U16 · Saha">
+                <img src="/images/teams/u16/04.jpg" alt="Sefaköy Kartal Spor U16 takımı saha karesi" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U16</span></div>
+                <span class="gallery-caption">U16 · Saha</span>
+              </button>
+            </div>
+
+            <div data-tab-panel="u14" class="hidden grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <button type="button" class="gallery-item is-featured" data-lightbox data-src="/images/teams/u14/01.jpg" data-caption="U14 · Saha">
+                <img src="/images/teams/u14/01.jpg" alt="Sefaköy Kartal Spor U14 takımı saha karesi" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U14</span></div>
+                <span class="gallery-caption">U14 · Saha</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u14/02.jpg" data-caption="U14 · Soyunma odası">
+                <img src="/images/teams/u14/02.jpg" alt="Sefaköy Kartal Spor U14 takımı soyunma odası" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U14</span></div>
+                <span class="gallery-caption">U14 · Soyunma odası</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u14/03.jpg" data-caption="U14 · Soyunma odası">
+                <img src="/images/teams/u14/03.jpg" alt="Sefaköy Kartal Spor U14 takımı" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U14</span></div>
+                <span class="gallery-caption">U14 · Soyunma odası</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u14/04.jpg" data-caption="U14">
+                <img src="/images/teams/u14/04.jpg" alt="Sefaköy Kartal Spor U14 takımı grup karesi" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U14</span></div>
+                <span class="gallery-caption">U14</span>
+              </button>
+            </div>
+
+            <div data-tab-panel="u12" class="hidden grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <button type="button" class="gallery-item is-featured" data-lightbox data-src="/images/teams/u12/06.jpg" data-caption="U12 · Tesis">
+                <img src="/images/teams/u12/06.jpg" alt="Sefaköy Kartal Spor U12 takımı tesis önü" data-fallback width="1600" height="1200" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U12</span></div>
+                <span class="gallery-caption">U12 · Tesis</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u12/01.jpg" data-caption="U12 · Soyunma odası">
+                <img src="/images/teams/u12/01.jpg" alt="Sefaköy Kartal Spor U12 takımı soyunma odası" data-fallback width="739" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U12</span></div>
+                <span class="gallery-caption">U12 · Soyunma odası</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u12/02.jpg" data-caption="U12">
+                <img src="/images/teams/u12/02.jpg" alt="Sefaköy Kartal Spor U12 takımı saha karesi" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U12</span></div>
+                <span class="gallery-caption">U12</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u12/03.jpg" data-caption="U12 · Soyunma odası">
+                <img src="/images/teams/u12/03.jpg" alt="Sefaköy Kartal Spor U12 takımı soyunma odası" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U12</span></div>
+                <span class="gallery-caption">U12 · Soyunma odası</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u12/04.jpg" data-caption="U12">
+                <img src="/images/teams/u12/04.jpg" alt="Sefaköy Kartal Spor U12 takımı" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U12</span></div>
+                <span class="gallery-caption">U12</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u12/05.jpg" data-caption="U12 · Salon">
+                <img src="/images/teams/u12/05.jpg" alt="Sefaköy Kartal Spor U12 takımı salon karesi" data-fallback width="2048" height="1152" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U12</span></div>
+                <span class="gallery-caption">U12 · Salon</span>
+              </button>
+              <button type="button" class="gallery-item" data-lightbox data-src="/images/teams/u12/07.jpg" data-caption="U12">
+                <img src="/images/teams/u12/07.jpg" alt="Sefaköy Kartal Spor U12 takımı saha karesi" data-fallback width="1200" height="1600" />
+                <div class="media-fallback"><img src="/images/logo.jpg" alt="" class="h-16 w-16 rounded-full object-cover opacity-80" /><span class="text-[0.65rem] uppercase tracking-[0.2em] text-white/40">U12</span></div>
+                <span class="gallery-caption">U12</span>
               </button>
             </div>
 

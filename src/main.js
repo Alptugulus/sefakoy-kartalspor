@@ -31,6 +31,33 @@ const IMAGE_PLAN = {
     "/images/teams/a-takimi/05.jpg",
     "/images/teams/a-takimi/06.jpg",
   ],
+  u18: [
+    "/images/teams/u18/01.jpg",
+    "/images/teams/u18/02.jpg",
+    "/images/teams/u18/03.jpg",
+  ],
+  u16: [
+    "/images/teams/u16/01.jpg",
+    "/images/teams/u16/02.jpg",
+    "/images/teams/u16/03.jpg",
+    "/images/teams/u16/04.jpg",
+    "/images/teams/u16/05.jpg",
+  ],
+  u14: [
+    "/images/teams/u14/01.jpg",
+    "/images/teams/u14/02.jpg",
+    "/images/teams/u14/03.jpg",
+    "/images/teams/u14/04.jpg",
+  ],
+  u12: [
+    "/images/teams/u12/01.jpg",
+    "/images/teams/u12/02.jpg",
+    "/images/teams/u12/03.jpg",
+    "/images/teams/u12/04.jpg",
+    "/images/teams/u12/05.jpg",
+    "/images/teams/u12/06.jpg",
+    "/images/teams/u12/07.jpg",
+  ],
   minikler: [
     "/images/teams/minikler/01.jpg",
     "/images/teams/minikler/02.jpg",

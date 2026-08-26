@@ -2,6 +2,10 @@
 export default {
   content: ["./*.html", "./src/**/*.html", "./src/**/*.js"],
   theme: {
+    fontFamily: {
+      display: ['"Archivo"', "ui-sans-serif", "system-ui", "sans-serif"],
+      sans: ['"Archivo"', "ui-sans-serif", "system-ui", "sans-serif"],
+    },
     extend: {
       colors: {
         ink: {
@@ -27,10 +31,6 @@ export default {
           dark: "#8C6D45",
           muted: "#C4A574",
         },
-      },
-      fontFamily: {
-        display: ['"Elms Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
-        sans: ['"Elms Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
         frame: "0 24px 60px rgba(11, 11, 11, 0.22)",
