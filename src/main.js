@@ -20,7 +20,7 @@ function redirectLegacyHash() {
 redirectLegacyHash();
 
 const IMAGE_PLAN = {
-  hero: "/images/hero-stadium.jpg",
+  hero: "/images/hero-home.jpg",
   president: "/images/president.jpg",
   history: "/images/tarihce-visual.jpg",
   aTeam: [
@@ -42,12 +42,18 @@ const IMAGE_PLAN = {
     "/images/teams/u16/03.jpg",
     "/images/teams/u16/04.jpg",
     "/images/teams/u16/05.jpg",
+    "/images/teams/u16/06.jpg",
+    "/images/teams/u16/07.jpg",
+    "/images/teams/u16/08.jpg",
+    "/images/teams/u16/09.jpg",
+    "/images/teams/u16/10.jpg",
   ],
   u14: [
     "/images/teams/u14/01.jpg",
     "/images/teams/u14/02.jpg",
     "/images/teams/u14/03.jpg",
     "/images/teams/u14/04.jpg",
+    "/images/teams/u14/05.jpg",
   ],
   u12: [
     "/images/teams/u12/01.jpg",
