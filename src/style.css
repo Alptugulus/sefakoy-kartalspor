@@ -1002,7 +1002,7 @@ body {
   isolation: isolate;
   overflow: hidden;
   background: #0b0b0b;
-  padding: 1rem 0 1.5rem;
+  padding: 5.75rem 0 2rem;
   color: #f6f3ee;
 }
 
@@ -1050,11 +1050,12 @@ body {
 .president-title {
   margin: 0 0 0.4rem;
   font-family: "Archivo", ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-size: clamp(2.35rem, 8.4vw, 4rem);
   font-weight: 800;
-  line-height: 0.95;
+  line-height: 1.12;
   letter-spacing: 0.02em;
-  word-spacing: 0.22em;
+  word-spacing: 0.12em;
+  overflow: visible;
 }
 
 .president-role {
@@ -1337,7 +1338,7 @@ body {
   }
 
   .president-hero {
-    padding: 1.25rem 0 2rem;
+    padding: 6.5rem 0 2.5rem;
   }
 
   .president-hero-grid {
