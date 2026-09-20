@@ -42,6 +42,8 @@ export default defineConfig({
         kulup: resolve(root, "kulup.html"),
         tarihce: resolve(root, "tarihce.html"),
         baskan: resolve(root, "baskan.html"),
+        yonetim: resolve(root, "yonetim.html"),
+        teknik: resolve(root, "teknik.html"),
         takimlar: resolve(root, "takimlar.html"),
         fikstur: resolve(root, "fikstur.html"),
         iletisim: resolve(root, "iletisim.html"),
