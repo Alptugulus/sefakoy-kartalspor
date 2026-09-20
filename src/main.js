@@ -33,6 +33,7 @@ const IMAGE_PLAN = {
     "/images/yonetim/naci-cavuslar.jpg",
     "/images/yonetim/mert-savas.jpg",
     "/images/yonetim/suleyman-evguzel.jpg",
+    "/images/yonetim/yunus-gulduren.jpg",
   ],
   teknik: [
     "/images/teknik/levent-sarica.jpg",
