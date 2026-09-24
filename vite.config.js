@@ -44,6 +44,7 @@ export default defineConfig({
         baskan: resolve(root, "baskan.html"),
         yonetim: resolve(root, "yonetim.html"),
         teknik: resolve(root, "teknik.html"),
+        oyuncular: resolve(root, "oyuncular.html"),
         takimlar: resolve(root, "takimlar.html"),
         fikstur: resolve(root, "fikstur.html"),
         iletisim: resolve(root, "iletisim.html"),
